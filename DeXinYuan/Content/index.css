@@ -30064,6 +30064,13 @@ footer p {
 	background: #027938;
 	color: #fff;
 }
+
+.met-index-product .nav-tabs li a.active {
+    padding: 8px 30px;
+    background: #027938;
+    color: #fff;
+}
+
 .met-index-product .nav-tabs li h3 {
 	margin: 0;
 	font-size: inherit;
