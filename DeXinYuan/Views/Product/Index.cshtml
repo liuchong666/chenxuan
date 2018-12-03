@@ -2,7 +2,8 @@
 @{
     ViewBag.Title = "Index";
 }
-
+@using DeXinYuan.Models;
+@model List<Category>
 <div class="met-banner banner-ny-h" data-height='' style=''>
     <div class="slick-slide">
         <img class="cover-image" src="/picture/banner4.jpg" sizes="(max-width: 767px) 767px" alt="产品中心">
@@ -13,90 +14,16 @@
     <div class="container">
         <div class=''>
             <ul class="nav nav-tabs">
-                <li>
-                    <a href="product.html" title="果树苗" class="active">
-                        <h3>
-                            果树苗
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="绿化苗">
-                        <h3>
-                            绿化苗
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="松柏类">
-                        <h3>
-                            松柏类
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="灌木类">
-                        <h3>
-                            灌木类
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="果树苗">
-                        <h3>
-                            果树苗
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="绿化苗">
-                        <h3>
-                            绿化苗
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="松柏类">
-                        <h3>
-                            松柏类
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="灌木类">
-                        <h3>
-                            灌木类
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="果树苗">
-                        <h3>
-                            果树苗
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="绿化苗">
-                        <h3>
-                            绿化苗
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="松柏类">
-                        <h3>
-                            松柏类
-                        </h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="product.html" title="灌木类">
-                        <h3>
-                            灌木类
-                        </h3>
-                    </a>
-                </li>
+                @foreach (var item in Model)
+                {
+                    <li>
+                        <a href="product.html" title="@item.CategoryName" class="@(ViewBag.categoryId==item.Id?"active":"")">
+                            <h3>
+                                @item.CategoryName
+                            </h3>
+                        </a>
+                    </li>
+                }
             </ul>
         </div>
     </div>
