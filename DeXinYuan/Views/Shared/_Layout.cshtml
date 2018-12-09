@@ -97,37 +97,37 @@
                 <div class="collapse navbar-collapse navbar-collapse-toolbar" id="navbar-default-collapse">
                     <ul class="nav navbar-nav navbar-right navlist">
                         <li>
-                            <a href="@Url.Action("Index","Home")" title="网站首页" class="link  active">
+                            <a href="Home/Index" title="网站首页" class="link  @(ViewBag.active.ToString() == "Home" ? " active" : "")">
                                 网站首页
                             </a>
                         </li>
                         <li class="dropdown margin-left-20">
-                            <a class="link" href="about.html">
+                            <a class="link @(ViewBag.active.ToString() == "About" ? " active" : "")" href="@Url.Action("About","Home")">
                                 关于我们
                             </a>
                         </li>
                         <li class="dropdown margin-left-20">
-                            <a class="link" href="@Url.Action("Index","Product")">
+                            <a class="link @(ViewBag.active.ToString() == "Index" ? " active" : "")" href="/Product/Index">
                                 产品中心
                             </a>
                         </li>
                         <li class="dropdown margin-left-20">
-                            <a class="link" href="jidi.html">
+                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="jidi.html">
                                 工程案例
                             </a>
                         </li>
                         <li class="dropdown margin-left-20">
-                            <a class=" link " href="honor.html">
+                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="honor.html">
                                 资质荣誉
                             </a>
                         </li>
                         <li class="dropdown margin-left-20">
-                            <a class="link" href="news.html">
+                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="news.html">
                                 新闻中心
                             </a>
                         </li>
                         <li class="dropdown margin-left-20">
-                            <a class=" link " href="contact.html">
+                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="contact.html">
                                 联系我们
                             </a>
                         </li>
@@ -269,5 +269,17 @@
         </i>
     </button>
     <script src="~/Scripts/index.js"></script>
+    <script>
+        $(function () {
+            $(".navlist a").each(function () {
+                var link = $(this).attr("href");
+                if (link.indexOf('@ViewBag.active')!=-1) {
+                    $(this).addClass("active");
+                }
+            });
+
+        });
+
+    </script>
 </body>
 </html>
