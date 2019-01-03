@@ -28789,7 +28789,7 @@ body {
 	min-height: 100%;
 	overflow-x: hidden;
 	font: 14px/1.5 "bigFont", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial, sans-serif;
-	color: #555555;
+	color: #a59898;
 	word-wrap: break-word;
 }
 h1, h2, h3, b, strong {
@@ -29915,14 +29915,14 @@ footer p {
 	background: #fff;
 }
 .met-index-body:nth-of-type(even) {
-	background: #f2f2f2;
+	background: #5E3C33;
 }
 .met-index-body h2 {
 	font-size: 26px;
 	margin-top: 0px;
 	text-align: center;
 	font-weight: 600;
-	color: #643E33;
+	color: white;
 }
 .met-index-body p.desc {
 	font-size: 16px;
