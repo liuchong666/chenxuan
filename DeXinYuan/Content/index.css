@@ -28785,12 +28785,12 @@ html {
 	height: 100%;
 }
 body {
-	height: auto;
-	min-height: 100%;
-	overflow-x: hidden;
-	font: 14px/1.5 "bigFont", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial, sans-serif;
-	color: #a59898;
-	word-wrap: break-word;
+    height: auto;
+    min-height: 100%;
+    overflow-x: hidden;
+    font: 14px/1.5 "bigFont", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Roboto, Arial, sans-serif;
+    color: #aca4a4;
+    word-wrap: break-word;
 }
 h1, h2, h3, b, strong {
 	font-weight: bold;
@@ -29194,7 +29194,7 @@ img.imgloading:not([src*=base64]), img.slick-loading:not([src*=base64]) {
 /*导航*/
 /*导航*/
 body[class*=met-navfixed] {
-	padding-top: 100px;
+	padding-top: 60px;
 }
 body.met-navfixed-langlist {
 	padding-top: 110px;
@@ -29303,6 +29303,7 @@ body.met-navfixed-langlist {
 	-webkit-box-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+
 	text-align: center;
 }
 .met-nav .navlist.flex > li > a {
@@ -29911,19 +29912,24 @@ footer p {
 /*首页*/
 /* 首页盒子 */
 .met-index-body {
-	padding: 70px 0px;
-	background: #fff;
+    background: url(/picture/bg2.jpg) no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    padding: 70px 0px;
+    /*background: #fff;*/
 }
-.met-index-body:nth-of-type(even) {
-	background: #5E3C33;
-}
-.met-index-body h2 {
-	font-size: 26px;
-	margin-top: 0px;
-	text-align: center;
-	font-weight: 600;
-	color: white;
-}
+    .met-index-body:nth-of-type(even) {
+        background-image: url(/picture/bg1.jpg);
+        /*background: #5E3C33;*/
+    }
+    .met-index-body h2 {
+        font-size: 26px;
+        margin-top: 0px;
+        text-align: center;
+        font-weight: 600;
+        color: #908e2b;
+    }
 .met-index-body p.desc {
 	font-size: 16px;
 	text-align: center;
