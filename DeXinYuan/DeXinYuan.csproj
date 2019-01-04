@@ -256,6 +256,8 @@
     <Content Include="picture\banner17.jpg" />
     <Content Include="picture\banner4.jpg" />
     <Content Include="picture\banner9.jpg" />
+    <Content Include="picture\bg1.jpg" />
+    <Content Include="picture\bg2.jpg" />
     <Content Include="picture\logo.png" />
     <Content Include="picture\weixin.jpg" />
     <Content Include="Scripts\bootstrap.js" />
@@ -273,6 +275,7 @@
     <Content Include="fonts\pe-icon-7-stroke.woff" />
     <Content Include="fonts\slick.woff" />
     <Content Include="fonts\web-icons.woff2" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\index.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
