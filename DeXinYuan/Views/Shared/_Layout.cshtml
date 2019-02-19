@@ -1,215 +1,234 @@
-﻿<!DOCTYPE HTML>
-<html>
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>德鑫缘铜雕网</title>
-    <meta name="keywords" content="铜雕" />
-    <meta name="description" content="铜雕" />
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta name="generator" content="" data-variable="/,cn,10001,,10001,res032" />
-    <link href="~/Content/index.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>河北宸轩雕塑</title>
+    <meta name="keywords" content="keywords" />
+    <meta name="description" content="memomemomemomemomemo" />
+    <meta name="applicable-device" content="pc,mobile" />
+    <link href="/content/css/bootstrap.css" rel="stylesheet" />
+    <link href="/content/css/bxslider.css" rel="stylesheet" />
+    <link href="/content/css/style.css" rel="stylesheet" />
+    <script src="/content/js/jquery.min.js"></script>
+    <script src="/content/js/bxslider.min.js"></script>
+    <script src="/content/js/common.js"></script>
+    <script src="/content/js/bootstrap.js"></script>
+
+
+    <!--[if lt IE 9]>
+      <script src="../../cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js" tppabs="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="../../cdn.bootcss.com/respond.js/1.4.2/respond.min.js" tppabs="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body class="met-navfixed">
-    <!--[if lte IE 8]>
-            <div class="text-center padding-top-50 padding-bottom-50 bg-blue-grey-100">
-                <p class="browserupgrade font-size-18">
-                    你正在使用一个
-                    <strong>
-                        过时
-                    </strong>
-                    的浏览器。请
-                    <a href="#"​ target="_blank">
-                        升级您的浏览器
-                    </a>
-                    ，以提高您的体验。
-                </p>
+<body>
+    <header>
+        <!--顶部-->
+        <div class="top_bg">
+            <div class="container">
+                <div class="col-xs-12 col-sm-9 col-md-9">
+                    <span class="top_welcome">欢迎光临河北宸轩雕塑网</span>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <form id="searchform" method="get" action="">
+                        <div class="input-group search_group">
+                            <input type="text" name="key" class="form-control input-sm" placeholder="产品搜索">
+                            <span class="input-group-btn">
+                                <span id="search_submit" onclick="searchform.submit();" title="产品搜索"
+                                      class="glyphicon glyphicon-search btn-lg" aria-hidden="true"></span>
+                            </span>
+                        </div>
+                    </form>
+                </div>
             </div>
-        <![endif]-->
-    <header id="header" class="header-fixed">
-        <div class="container">
-            <ul class="head-list">
-                <li class="left tel">
-                    <img src="/picture/1514354107.png" alt="">
-                    <span>
-                        咨询电话：
-                    </span>
-                    <em>
-                        13699285614
-                    </em>
-                </li>
-                <li class="right">
-                    <ul>
-                        <li>
-                            <img src="/picture/1514355047.png" alt="一流的服务">
-                            <span>
-                                一流的服务
-                            </span>
-                        </li>
-                        <li>
-                            <img src="/picture/1514354958.png" alt="透明的价格">
-                            <span>
-                                透明的价格
-                            </span>
-                        </li>
-                        <li>
-                            <img src="/picture/1514354817.png" alt="重信守誉">
-                            <span>
-                                重信守誉
-                            </span>
-                        </li>
-                        <li>
-                            <img src="/picture/1514354461.png" alt="优质的苗木">
-                            <span>
-                                优质的雕塑
-                            </span>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
         </div>
-    </header>
-    <nav class="navbar navbar-default met-nav navbar-fixed-top" role="navigation">
+
+        <!--banner-->
         <div class="container">
             <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle hamburger hamburger-close collapsed" data-target="#navbar-default-collapse"
-                            data-toggle="collapse">
-                        <span class="sr-only">
-                            Toggle navigation
-                        </span>
-                        <span class="hamburger-bar">
-                        </span>
-                    </button>
-                    <a href="#" class="navbar-brand navbar-logo vertical-align" title="德鑫缘铜雕网">
-                        <h1 class='hide'>
-                            德鑫缘铜雕网
-                        </h1>
-                        <div class="vertical-align-middle">
-                            <img src="/picture/logoko.png" alt="德鑫缘铜雕网" title="德鑫缘铜雕网" />
-                        </div>
-                    </a>
-                    <h2 class='hide'></h2>
+                <div class="col-xs-12 col-sm-9 col-md-9">
+                    <a href="#"><img src="/content/images/logo.png" class="logo" /></a>
                 </div>
-                <div class="collapse navbar-collapse navbar-collapse-toolbar" id="navbar-default-collapse">
-                    <ul class="nav navbar-nav navbar-right navlist">
-                        <li>
-                            <a href="/Home/Index" title="网站首页" class="link  @(ViewBag.active.ToString() == "Home" ? " active" : "")">
-                                网站首页
-                            </a>
-                        </li>
-                        <li class="dropdown margin-left-20">
-                            <a class="link @(ViewBag.active.ToString() == "About" ? " active" : "")" href="@Url.Action("About","Home")">
-                                关于我们
-                            </a>
-                        </li>
-                        <li class="dropdown margin-left-20">
-                            <a class="link @(ViewBag.active.ToString() == "Index" ? " active" : "")" href="/Product/Index">
-                                产品中心
-                            </a>
-                        </li>
-                        <li class="dropdown margin-left-20">
-                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="jidi.html">
-                                工程案例
-                            </a>
-                        </li>
-                        <li class="dropdown margin-left-20">
-                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="honor.html">
-                                资质荣誉
-                            </a>
-                        </li>
-                        <li class="dropdown margin-left-20">
-                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="news.html">
-                                新闻中心
-                            </a>
-                        </li>
-                        <li class="dropdown margin-left-20">
-                            <a class="link @(ViewBag.active.ToString() == ViewContext.RouteData.Values["action"].ToString() ? " active" : "")" href="contact.html">
-                                联系我们
-                            </a>
-                        </li>
-                    </ul>
+                <div class="col-xs-12 col-sm-3 col-md-3 tel_box">
+                    <div class="top_tel">
+                        <img src="/content/images/tel.png" alt="服务热线">
+                        <span>全国服务热线：</span>
+                        <p>136-9928-5614</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
 
+        <!--菜单-->
+        <nav id="top_nav" class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">导航菜单</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span id="search_btn" class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    <a class="navbar-brand" href="#">导航菜单</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
 
+                        <li><a href="index.htm">首 页</a></li>
+
+                        <li><a href="page/html/about.htm">关于我们</a></li>
+
+                        <li><a href="product/class/index.htm">产品展示</a></li>
+
+                        <li><a href="news/class/index.htm">新闻资讯</a></li>
+
+                        <li><a href="down/class/index.htm">下载中心</a></li>
+
+                        <li><a href="photo/class/-8.html">企业相册</a></li>
+
+                        <li><a href="page/html/feedback.php.htm">留言反馈</a></li>
+
+                        <li><a href="page/html/contact.php.htm">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     @RenderBody()
-
-    <div class="met-footnav text-center">
+    <footer>
         <div class="container">
-            <div class="row mob-masonry">
-                <div class="col-md-2 col-sm-3 col-xs-6 list masonry-item">
-                    <h4>
-                        <a href="#" title="关于我们">
-                            关于我们
-                        </a>
-                    </h4>
+            <div class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                    <img class="footer_logo" src="/content/images/1541748926.png">
+                    <p class="footer_logo_text">
+                    <p>
+                        CopyRight 2013 All Right Reserved PHPWEB外贸网站&nbsp;ICP:08118166
+                    </p>
+                    </p>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6 list masonry-item">
-                    <h4>
-                        <a href="#" title="产品中心">
-                            产品中心
-                        </a>
-                    </h4>
+                <div class="col-xs-12 col-sm-3 col-md-3 footer_contact">
+                    <p>
+                        联系人：吴先生
+                    </p>
+                    <p>
+                        手机：18926129998
+                    </p>
+                    <p>
+                        电话：020-22043297
+                    </p>
+                    <p>
+                        邮箱：510551@qq.com
+                    </p>
+                    <p>
+                        地址： 广东省广州市天河区天平架沙太路沙太路
+                    </p>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6 list masonry-item">
-                    <h4>
-                        <a href="#" title="工程案例">
-                            工程案例
-                        </a>
-                    </h4>
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <div class="col-xs-4 col-md-4 footer_menu">
+                        <p class="footer_menu_first"><a target="_blank" href="product/class/index.htm">产品中心</a></p>
+
+                        <p><a href="product/class/-115.html" target="_self">产品分类一</a></p>
+                        <p><a href="product/class/-74.html" target="_self">产品分类二</a></p>
+                        <p><a href="product/class/-124.html" target="_self">产品分类三</a></p>
+                    </div>
+                    <div class="col-xs-4 col-md-4 footer_menu">
+                        <p class="footer_menu_first"><a target="_blank" href="news/class/index.htm">新闻中心</a></p>
+
+                        <p><a href="news/class/-86.html" target="_self">公司新闻</a></p>
+                        <p><a href="news/class/-99.html" target="_self">行业新闻</a></p>
+                        <p><a href="news/class/-106.html" target="_self">常见问题</a></p>
+                    </div>
+                    <div class="col-xs-4 col-md-4 footer_menu">
+                        <p class="footer_menu_first"><a target="_blank" href="page/html/about.php.htm">关于我们</a></p>
+
+                        <p><a href="page/html/about.php.htm" target="_self">公司简介</a></p>
+                        <p><a href="page/html/contact.php.htm" target="_self">联系我们</a></p>
+                        <p><a href="page/html/feedback.php.htm" target="_self">留言反馈</a></p>
+                        <p><a href="page/html/services.php.htm" target="_self">我们的服务</a></p>
+                    </div>
                 </div>
-                <div class="col-md-2 col-sm-3 col-xs-6 list masonry-item">
-                    <h4>
-                        <a href="#" title="资质荣誉">
-                            资质荣誉
-                        </a>
-                    </h4>
+                <div class="col-xs-12 col-sm-2 col-md-2">
+                    <img class="footer_qrcode" src="/content/images/1524472467.jpg">
+                    <p class="footer_qrcode_text">手机二维码</p>
                 </div>
-                <div class="col-md-3 col-ms-12 col-xs-12 info masonry-item">
-            <em>
-                <a href="#" title="400-123-4567" target='_self'>
-                    咨询热线：
-                </a>
-            </em>
-            <p style="text-align: left; color: black;">
-                地址：河北省保定市唐县东屯村工业区<br/>
-                电话：+8618631264206<br />
-                Q Q：0312-4989584
-            </p>
+            </div>
         </div>
+    </footer>
+
+
+    <!--客服面板-->
+    <link rel="stylesheet" type="text/css" href="/content/css/online.css" />
+    <div id="cmsFloatPanel">
+        <div class="ctrolPanel">
+            <a class="service" href="#"></a>
+            <a class="message" href="#"></a>
+            <a class="qrcode" href="#"></a>
+            <a class="arrow" title="返回顶部" href="#"></a>
+        </div>
+        <div class="servicePanel">
+            <div class="servicePanel-inner">
+                <div class="serviceMsgPanel">
+                    <div class="serviceMsgPanel-hd"><a href="#"><span>关闭</span></a></div>
+                    <div class="serviceMsgPanel-bd">
+                        <!--在线QQ-->
+                        <!--在线QQ-->
+                        <!--在线MSN-->
+
+
+                    </div>
+                    <div class="serviceMsgPanel-ft"></div>
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+        <div class="messagePanel">
+            <div class="messagePanel-inner">
+                <div class="formPanel">
+
+                    <div class="formPanel-bd">
+                        <div class="bdsharebuttonbox" style="display: inline-block; float:left;">
+                            <a href="#"
+                               class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"
+                                                                       title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina"
+                                                                                              title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#"
+                                                                                                                                                                                                                                                        class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                        </div>
+                        <a type="button" class="btn btn-default btn-xs" href="#"
+                           style="margin: 12px 0px 0px 10px;">关闭</a>
+                    </div>
+
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow01"></div>
+                    <div class="arrow02"></div>
+                </div>
+            </div>
+        </div>
+        <div class="qrcodePanel">
+            <div class="qrcodePanel-inner">
+                <div class="codePanel">
+                    <div class="codePanel-hd">
+                        <span style="float:left">用手机扫描二维码</span><a href="#"><span>关闭</span></a>
+                    </div>
+                    <div class="codePanel-bd">
+                        <img src="/content/images/1524472467.jpg" alt="二维码" />
+                    </div>
+                </div>
+                <div class="arrowPanel">
+                    <div class="arrow01"></div>
+                    <div class="arrow02"></div>
+                </div>
             </div>
         </div>
     </div>
-
-    <footer>
-        <div class="container text-center">
-            <p>
-                CopyRight &copy; 2011-2018 河北宸轩雕塑有限公司 版权所有    ICP备XXXXXXXX号
-            </p>
-        </div>
-    </footer>
-    <button type="button" class="btn btn-icon btn-primary btn-squared met-scroll-top hide">
-        <i class="icon wb-chevron-up" aria-hidden="true">
-        </i>
-    </button>
-    <script src="~/Scripts/index.js"></script>
-    <script>
-        $(function () {
-            $(".navlist a").each(function () {
-                var link = $(this).attr("href");
-                if (link.indexOf('@ViewBag.active')!=-1) {
-                    $(this).addClass("active");
-                }
-            });
-
-        });
-
-    </script>
+    <script type="text/javascript" src="/content/js/online.js"></script>
 </body>
+
 </html>

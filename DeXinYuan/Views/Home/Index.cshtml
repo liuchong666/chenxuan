@@ -2,245 +2,367 @@
     ViewBag.Title = "Home Page";
     ViewBag.active = "Home/Index";
 }
-<div class="met-banner" data-height='' style=''>
-    <div class="slick-slide">
-        <img class="cover-image" src="/picture/1.jpg" sizes="(max-width: 767px) 767px" alt="幻灯二">
-    </div>
-    <div class="slick-slide">
-        <img class="cover-image" src="/picture/2.jpg" sizes="(max-width: 767px) 767px" alt="幻灯一">
-    </div>
+<!---轮播图-->
+<div class="flash">
+    <ul class="bxslider">
+        <li><img src="/images/1546584515.jpg" /></li>
+        <li><img src="/images/1546584523.jpg" /></li>
+    </ul>
 </div>
+<script type="text/javascript">
+        $('.bxslider').bxSlider({
+            adaptiveHeight: true,
+            infiniteLoop: true,
+            hideControlOnEnd: true,
+            auto: true
+        });
+</script>
 
-<div class="met-index-hot met-index-body" id="hot">
-    <div class="title">
-        <h2 class="">
-            产品中心
-        </h2>
-        <div class="home-line" style="background:url(/images/1514365123.png)center no-repeat;">
-        </div>
-        <p class="desc">
-            我们用心为您做的更好
-        </p>
-    </div>
-    <div class="container">
-        <ul class="blocks-100 blocks-sm-2 blocks-md-4 blocks-xlg-4 " data-scale=''>
-            <!--string(7) "product" -->
-            <li class="">
-                <div class="widget widget-article widget-shadow">
-                    <div class="widget-header cover overlay overlay-hover">
-                        <img class="cover-image overlay-scale" src="/img/1.jpg" alt="">
-                    </div>
-                    <div class="widget-body">
-                        <h3 class="widget-title">
-                            铜雕佛像
-                        </h3>
-                        <p class="des">
-                            佛像是造像数量最多的一类。包括、强巴佛、观音菩萨、阿弥陀佛等等。广义概念的佛像也包括菩萨等佛教所有造像...
-                        </p>
-                        <div class="widget-body-footer">
-                            <a class="btn btn-info waves-effect waves-light" href="productshow.html">
-                                查看详情
-                            </a>
-                            <div class="widget-actions pull-right">
-                                <a href="#">
-                                    关注人数：121
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="">
-                <div class="widget widget-article widget-shadow">
-                    <div class="widget-header cover overlay overlay-hover">
-                        <img class="cover-image overlay-scale" src="/img/2.jpg" alt="">
-                    </div>
-                    <div class="widget-body">
-                        <h3 class="widget-title">
-                            铜雕人物
-                        </h3>
-                        <p class="des">
-                            小叶黄杨是黄杨科，黄杨属灌木，生长低矮，枝条密集，枝圆柱形，小枝四棱形，叶薄革质，阔椭圆形或阔卵形，叶片无光或...
-                        </p>
-                        <div class="widget-body-footer">
-                            <a class="btn btn-info waves-effect waves-light" href="productshow.html">
-                                查看详情
-                            </a>
-                            <div class="widget-actions pull-right">
-                                <a href="#">
-                                    关注人数：57
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="">
-                <div class="widget widget-article widget-shadow">
-                    <div class="widget-header cover overlay overlay-hover">
-                        <img class="cover-image overlay-scale" src="/img/3.jpg" alt="">
-                    </div>
-                    <div class="widget-body">
-                        <h3 class="widget-title">
-                            铜雕动物
-                        </h3>
-                        <p class="des">
-                            云杉别名茂县云杉、茂县杉等。为乔木。高达45米，胸径达1米；树皮淡灰褐色或淡褐灰色，裂成不规则鳞片或稍厚的块片脱落...
-                        </p>
-                        <div class="widget-body-footer">
-                            <a class="btn btn-info waves-effect waves-light" href="productshow.html">
-                                查看详情
-                            </a>
-                            <div class="widget-actions pull-right">
-                                <a href="#">
-                                    关注人数：85
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li class="">
-                <div class="widget widget-article widget-shadow">
-                    <div class="widget-header cover overlay overlay-hover">
-                        <img class="cover-image overlay-scale" src="/img/4.jpg" alt="">
-                    </div>
-                    <div class="widget-body">
-                        <h3 class="widget-title">
-                            铜雕浮
-                        </h3>
-                        <p class="des">
-                            黄金蜜糖李：新引入澳大利亚品种，果面果肉均为金黄色，很有透明立体感，果大质优，单果重100-160克，含糖量17％，浓甜而...
-                        </p>
-                        <div class="widget-body-footer">
-                            <a class="btn btn-info waves-effect waves-light" href="productshow.html">
-                                查看详情
-                            </a>
-                            <div class="widget-actions pull-right">
-                                <a href="#">
-                                    关注人数：79
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-        <div class="hot-btns">
-            <a href="@Url.Action("Index","Product")">
-                查看更多
-            </a>
-        </div>
-    </div>
-</div>
-<!--string(4) "news" string(4) "news" -->
+<!--内容导航-->
+<div class="advantage" style="background-image: url();">
 
-<div class="met-index-about met-index-body" id="about">
-    <div class="title">
-        <h2 class="">
-            工程案例
-        </h2>
-        <div class="home-line" style="background:url(/images/1514365123.png)center no-repeat;">
-        </div>
-        <p class="desc">
-        </p>
-    </div>
-    <div class="container">
-        <div class="about-list">
-            <div>
-                <div class="col-md-6 img">
-                    <img src="/img/g1.jpg" alt="">
-                </div>
-                <div class="col-md-6 text">
-                    <h3>
-                        某市大型铜鼎
-                        <span>
-                            / 01
-                        </span>
-                    </h3>
-                    <p>
-                        我社坚持以质量求生存！以技术求发展！以诚信求稳定！为客户提供优质售后服务是我们的承诺！我们坚持以质量为本、坚持重合同、守信用、优质服务。愿与国内各界歇诚合作，提供优质良种苗木，并提供接穗、嫁接、及售后服务。欢迎各界朋友来人来电咨询、考察、指导！共创双赢！...
-                    </p>
-                    <a href="jidi.html" title="樱桃种植基地" target='_self' class="btn btn-info waves-effect waves-light">
-                        查看更多
+    <div class="container advantage_list">
+        <div class="row">
+            <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                <div class="col-sm-3 col-md-3">
+                    <a href="index.htm" target="_self">
+                        <img src="/content/images/1546586598.jpg">
                     </a>
                 </div>
-            </div>
-            <div>
-                <div class="col-md-6 img">
-                    <img src="/img/g2.jpg" alt="">
-                </div>
-                <div class="col-md-6 text">
-                    <h3>
-                        猕猴桃种植基地
-                        <span>
-                            / 02
-                        </span>
-                    </h3>
-                    <p>
-                        我社坚持以质量求生存！以技术求发展！以诚信求稳定！为客户提供优质售后服务是我们的承诺！我们坚持以质量为本、坚持重合同、守信用、优质服务。愿与国内各界歇诚合作，提供优质良种苗木，并提供接穗、嫁接、及售后服务。欢迎各界朋友来人来电咨询、考察、指导！共创双赢！...
-                    </p>
-                    <a href="jidi.html" title="猕猴桃种植基地" target='_self' class="btn btn-info waves-effect waves-light">
-                        查看更多
-                    </a>
+                <div class="col-sm-9 col-md-9">
+                    <h4>新品推荐</h4>
+                    <p>NEW PRODUCTS</p>
                 </div>
             </div>
-            <div>
-                <div class="col-md-6 img">
-                    <img src="/img/g3.jpg" alt="">
-                </div>
-                <div class="col-md-6 text">
-                    <h3>
-                        云杉苗种植基地
-                        <span>
-                            / 03
-                        </span>
-                    </h3>
-                    <p>
-                        云杉幼苗对干燥的抵抗力弱，耐阴湿，应经常浇水以保持湿润，对阳光抵抗力弱，接草后应架设荫棚，以避免日灼危害。苗木生长缓慢，一般当年不进行间苗。云杉幼树期易受晚霜为害，故多设荫棚、栽植在高大苗木下方，冬季进行保护防御。云杉不易移植，多采取带土移植，移植时应仔细操作，减少对根系和枝叶的伤害，以提高成活率。...
-                    </p>
-                    <a href="jidi.html" title="云杉苗种植基地" target='_self' class="btn btn-info waves-effect waves-light">
-                        查看更多
+
+            <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                <div class="col-sm-3 col-md-3">
+                    <a href="photo/class/-9.html" target="_self">
+                        <img src="/content/images/1546586626.jpg">
                     </a>
+                </div>
+                <div class="col-sm-9 col-md-9">
+                    <h4>资质荣誉</h4>
+                    <p>QUALIFICATION HONOR</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                <div class="col-sm-3 col-md-3">
+                    <a href="photo/class/-8.html" target="_self">
+                        <img src="/content/images/1546586656.jpg">
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-9">
+                    <h4>案例集锦</h4>
+                    <p>CASES</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-md-3 col-mm-6 advantage_col">
+                <div class="col-sm-3 col-md-3">
+                    <a href="page/html/contact.php.htm" target="_self">
+                        <img src="/content/images/1546586727.jpg">
+                    </a>
+                </div>
+                <div class="col-sm-9 col-md-9">
+                    <h4>联系我们</h4>
+                    <p>CONTACT US</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="met-index-imgnews met-index-body" id="news">
-    <div class="title">
-        <h2 class="">
-            关于我们
-        </h2>
-        <div class="home-line" style="background:url(/images/1514365123.png)center no-repeat;">
+<!--左侧产品导航-->
+<div class="container">
+    <div class="row">
+        <!--div class="product_head" data-move-y="-40px">
+                    <h2>质量保证 · 产品直通车</h2>
+                    <span></span>
+                    <p>品类齐全，您想要的好产品都在这里</p>
+              </div-->
+        <div class="col-xs-12 col-sm-3 col-md-3">
+            <div class="left_nav" data-move-y="-30px">
+                <p>CATALOGUE</p>
+                <h3>产品目录</h3>
+                <div class="left_nav_bg">
+                    <ul class="left_nav_ul" id="firstpane">
+                        <li><a class="biglink" href="product/class/-115.html">铜佛像</a></li>
+                        <ul class="left_snav_ul menu_body">
+                            <li><a href="product/class/-126.html" target="_self">铜佛像a</a></li>
+                            <li><a href="product/class/-127.html" target="_self">铜佛像b</a></li>
+                            <li><a href="product/class/-128.html" target="_self">铜佛像c</a></li>
+                        </ul>
+
+                        <li><a class="biglink" href="product/class/1-74.html">人物像</a></li>
+
+                        <ul class="left_snav_ul menu_body"></ul>
+
+                        <li><a class="biglink" href="product/class/-124.html">动物像</a></li>
+                        <li><a class="biglink" href="product/class/-124.html">城市雕塑</a></li>
+
+                        <ul class="left_snav_ul menu_body"></ul>
+
+                    </ul>
+
+                    <div class="left_nav_tel">020-22043297</div>
+                </div>
+            </div>
         </div>
-        <p class="desc">
-        </p>
+        <div class="col-xs-12 col-sm-9 col-md-9">
+            <div class="product_list">
+
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-136.html" tppabs="http://demo.weboss.hk/h127/product/html/?136.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-136.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?136.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-135.html" tppabs="http://demo.weboss.hk/h127/product/html/?135.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-135.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?135.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-134.html" tppabs="http://demo.weboss.hk/h127/product/html/?134.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-134.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?134.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-133.html" tppabs="http://demo.weboss.hk/h127/product/html/?133.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-133.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?133.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-132.html" tppabs="http://demo.weboss.hk/h127/product/html/?132.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-132.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?132.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-131.html" tppabs="http://demo.weboss.hk/h127/product/html/?131.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-131.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?131.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-130.html" tppabs="http://demo.weboss.hk/h127/product/html/?130.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-130.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?130.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-129.html" tppabs="http://demo.weboss.hk/h127/product/html/?129.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-129.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?129.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                    <a href="product/html/-128.html" tppabs="http://demo.weboss.hk/h127/product/html/?128.html">
+                        <img src="/images/11.jpg" tppabs="http://demo.weboss.hk/h127/images/1524572061.png"
+                             class="opacity_img" alt="产品名称">
+                    </a>
+                    <p class="product_title">
+                        <a href="product/html/-128.html"
+                           tppabs="http://demo.weboss.hk/h127/product/html/?128.html" title="产品名称">产品名称</a>
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
     </div>
+</div>
+
+<div class="case_bg"
+     style="background-image: url(/content/images/1546589213.jpg); background-size: cover;background-attachment: fixed;background-color: #1A1A1A;">
     <div class="container">
-        <div class="clearfix" data-plugin="matchHeight">
-            <div class="col-md-7 col-xs-12 left-news">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="case_head" data-move-y="-40px">
+                    <h2>应用领域</h2>
+                    <span></span>
+                    <p>APPLICATION AREAS</p>
+                </div>
+                <div class="case_list">
 
-                <div class="slick" id="imgnews-slick">
-                    <div>
-                        <a href="newsshow.html" title="金叶榆行情下跌，来源于“跟风”太紧！" target='_self'>
 
-                            <img class="cover-image" src="/img/g3.jpg" sizes="(max-width: 991px) 991px"
-                                 alt="">
-                        </a>
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
                     </div>
 
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-mm-6 product_img" data-move-y="50px">
+                        <a href="photo/html/-70.html"><img src="/images/20190104161450_29561.jpg" /></a>
+                        <p class="case_title"><a href="photo/html/-70.html">温泉功能池</a></p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-5 col-xs-12 right-news news-ul">
-                <span style="line-height: 25px;letter-spacing:2px">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;河北宸轩雕塑工艺品制造有限公司成立于2000年，地理位置优越，位于古时“尧帝故里奉国之城-河北唐县”，是一家专业生产销售城市雕塑、景观雕塑、铜佛像的厂家。主要产品有：城市雕塑、公司形象雕塑、园林景观雕塑、铜佛像、铜钟和铁钟、香炉塔炉佛教用品等；中心一贯坚持“质量第一，用户至上，优质服务，信守合同”的宗旨，凭借着高质量的产品，良好的信誉，优质的服务，产品畅销全国近三十多个省、市、自治区以及远销欧美、西亚等国家。竭诚与国内外商界宗教界合作，共同发展，共创辉煌！
-                </span>
-            </div>
         </div>
-        
     </div>
 </div>
+
+<!--关于我们-->
+<div class="news_bg">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="about_head" data-move-y="-40px">
+                <h2>关于我们</h2>
+                <span></span>
+                <p>一站式整体方案服务商</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 js_about_left" data-move-y="-40px">
+                <div class="about_content">
+                    PHPWEB企业建站系统是采用PHP+MYSQL技术进行开发的，架构清晰，代码易于维护。支持伪静态功能，可生成google和百度地图，支持自定义url、关键字和描述，符合SEO标准。拥有企业网站常用的模块功能(企业简介模块、新闻模块、产品模块、下载模块、图片模块、在线留言、在线订单、友情链接、网站地图等)，强大灵活的后台管理功能，可为企业打造出专业且具有营销力的标准网站，PHPWEB企业建站系统是采用PHP+MYSQL技术进行开发的，架构清晰，代码易于维护。支持伪静态功能，可生成google和百度地图，支持自定义url、关键字和描述，符合SEO标准。拥有企业网站常用的模块功能(企业简介模块、新闻模块、产品模块、下载模块、图片模块、在线留言、在线订单站。。。
+                </div>
+                <a href="page/html/about.php.htm" class="about_btn">了解更多</a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 js_about_right" data-move-y="40px">
+                <div class="about_video">
+                    <img src="/content/images/1546590124.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--新闻资讯-->
+<div class="contaner">
+    <div class="container">
+        <div class="row">
+            <div class="news_head" data-move-y="-40px">
+                <h2>新闻资讯</h2>
+                <span></span>
+                <p>连线行业前沿资讯</p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="col-sm-12 col-md-5 news_img" data-move-x="-100px"
+                     style="background-image: url(/content/images/1546598176.jpg);">
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-7  news_text" data-move-y="150px">
+                    <ul class="news_index">
+                        <li>
+                            <span>
+                                <strong>25</strong>
+                                <i>2010-01</i>
+                            </span>
+                            <a href="news/html/-431.html" title="如何解决光扩散PC注塑成型拉丝问题？">如何解决光扩散PC注塑成型拉丝问题？</a><br>
+                            <em>如何解决光扩散PC注塑成型拉丝问题？</em>
+                        </li>
+
+                        <li>
+                            <span>
+                                <strong>25</strong>
+                                <i>2010-01</i>
+                            </span>
+                            <a href="news/html/-430.html" title="充电器外壳阻燃防火PC 充电器外壳阻燃防火PC注塑飞边的原因及解决方">
+                                充电器外壳阻燃防火PC
+                                充电器外壳阻燃防火PC注塑飞边的原因及解决方
+                            </a><br>
+                            <em>充电器外壳阻燃防火PC 充电器外壳阻燃防火PC注塑飞边的原因及解决方</em>
+                        </li>
+
+                        <li>
+                            <span>
+                                <strong>25</strong>
+                                <i>2010-01</i>
+                            </span>
+                            <a href="news/html/-429.html" title="如何解决导电PC注塑件熔接痕问题？">如何解决导电PC注塑件熔接痕问题？</a><br>
+                            <em>如何解决导电PC注塑件熔接痕问题？</em>
+                        </li>
+
+                        <li>
+                            <span>
+                                <strong>25</strong>
+                                <i>2010-01</i>
+                            </span>
+                            <a href="news/html/-428.html" title="HTML5提供了一些新的元素和属性">HTML5提供了一些新的元素和属性</a><br>
+                            <em>HTML5提供了一些新的元素和属性</em>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/content/js/jquery.smoove.min.js"></script>
+<script>$('.product_head,.product_img,.left_nav,.case_head,.case_img,.advantage_head,.advantage_right,.advantage_left,.news_head,.news_ul,.answer_ul,.about_head,.js_about_left,.js_about_right,.cooperation_head,.cooperation_img').smoove({ offset: '10%' });</script>
 
 
