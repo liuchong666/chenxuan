@@ -224,11 +224,6 @@
     <Content Include="images\20190104161450_49760.jpg" />
     <Content Include="images\20190104161450_59470.jpg" />
     <Content Include="images\20190104161450_96305.jpg" />
-    <Content Include="images\ajax-loader.gif" />
-    <Content Include="images\loading.gif" />
-    <Content Include="images\video-play.png" />
-    <Content Include="images\vimeo-play.png" />
-    <Content Include="images\youtube-play.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
