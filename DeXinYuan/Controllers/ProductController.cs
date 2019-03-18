@@ -19,5 +19,10 @@ namespace DeXinYuan.Controllers
             ViewBag.products = pList;
             return View(list);
         }
+
+        public ActionResult Detail(int id)
+        {
+            return View();
+        }
     }
 }
